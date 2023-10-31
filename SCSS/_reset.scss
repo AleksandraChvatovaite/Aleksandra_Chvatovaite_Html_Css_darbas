@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $background-color;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+p {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: $container-padding $container-padding 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

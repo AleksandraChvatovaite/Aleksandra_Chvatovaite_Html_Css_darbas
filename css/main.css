@@ -1,0 +1,344 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #FFF;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: 2rem 2rem 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .burger {
+  border: none;
+  background-color: transparent;
+  width: 1.5rem;
+  height: 1.375rem;
+  padding: 0;
+}
+
+.burger img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-wrap {
+  position: relative;
+}
+
+.btn-wrap img {
+  position: absolute;
+}
+
+button {
+  position: relative;
+  color: #111;
+  background-color: transparent;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1.4rem 3.3rem;
+  border: 3px solid transparent;
+  border-radius: 2.3rem;
+}
+
+.launching-soon span {
+  color: #FF3998;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.launching-soon h5 {
+  color: #111;
+  width: 17.125rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 1.5rem 0;
+}
+.launching-soon p {
+  color: #111;
+  font-size: 1.25rem;
+  line-height: 150%;
+  width: 12.9375rem;
+  margin-bottom: 2rem;
+}
+.launching-soon button {
+  margin-bottom: 4.13rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .logo {
+  height: 2.25rem;
+}
+header nav {
+  display: none;
+}
+
+main {
+  margin-top: 2.625rem;
+  position: relative;
+  height: 28rem;
+}
+main span {
+  margin-top: 2.375rem;
+  color: #FF3998;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+main h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #111;
+  max-width: 17.125rem;
+  margin-bottom: 1.5rem;
+}
+main p {
+  color: #555;
+  font-size: 1.25rem;
+  line-height: 150%;
+  max-width: 17.125rem;
+  margin-bottom: 1.7rem;
+}
+main .nft-fig {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  z-index: -1;
+  min-width: 26rem;
+  width: 26rem;
+  -o-object-position: 12rem -1rem;
+     object-position: 12rem -1rem;
+}
+
+.bg-img {
+  position: relative;
+  margin-top: 4.65rem;
+}
+.bg-img > div {
+  background-image: url(/assets/background.svg);
+  background-repeat: no-repeat;
+  background-position: -40rem;
+  position: absolute;
+  left: -2rem;
+  right: -2rem;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.bg-img h2 {
+  padding-top: 7.5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 1rem;
+}
+.bg-img .bg-img-p {
+  font-size: 1.25rem;
+  color: #111;
+  line-height: 150%;
+  max-width: 22.75rem;
+  padding-bottom: 1.5rem;
+}
+
+.full-width {
+  position: relative;
+  left: -2rem;
+  width: calc(100% + 4rem);
+}
+
+.auction .company-logos {
+  margin-top: 3.655rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 100%;
+}
+.auction .company-logos img {
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: left;
+     object-position: left;
+  max-width: 10rem;
+  height: 3rem;
+}
+.auction .company-logos img:first-child {
+  width: 8.5rem;
+}
+.auction .company-logos img:nth-child(4) {
+  display: none;
+}
+.auction h3 {
+  margin-top: 3.655rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+.auction .auction-p {
+  color: #555;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+.auction .auction-p a {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.auction-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 5rem;
+  overflow-x: auto;
+}
+.auction-cards .card {
+  width: 18.1rem;
+  height: 25rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-left: 2rem;
+}
+.auction-cards .card .card-descrpt {
+  background-color: #eee;
+}
+.auction-cards .card .line {
+  padding: 0 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.auction-cards .card span {
+  color: #FF8139;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.auction-cards .card .before-element::before {
+  content: url("/assets/eth.svg");
+}
+.auction-cards .card:last-child {
+  margin-right: 2rem;
+}
+
+.launching-soon {
+  position: relative;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.launching-soon .nft-woman {
+  position: absolute;
+  top: 7rem;
+  right: -2rem;
+  z-index: -1;
+  min-width: 13rem;
+  width: 13rem;
+  -o-object-position: 2rem 0;
+     object-position: 2rem 0;
+}
+
+.launching {
+  display: none;
+}
+
+.footer-logo {
+  margin-top: 4.25rem;
+  height: 2.25rem;
+  margin-bottom: 1.88rem;
+}
+
+.footer-p-1 {
+  color: #555;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  color: #999;
+  width: 7.35244rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.footer-card-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-right: 6.5rem;
+}
+
+footer h6 {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.75rem;
+  margin-top: 0;
+}
+
+footer li {
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 180%;
+}
+
+.copyright {
+  margin-top: 4rem;
+}/*# sourceMappingURL=main.css.map */

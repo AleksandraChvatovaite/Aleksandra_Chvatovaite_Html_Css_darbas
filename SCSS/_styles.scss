@@ -1,0 +1,267 @@
+header  { 
+   display: flex;
+   align-items: center;
+  justify-content: space-between;
+  .logo {
+  height: 2.25rem;
+  }
+  nav {
+    display: none;
+  }
+}
+
+main {
+  margin-top: 2.625rem;
+  position: relative;
+  height: 28rem;
+
+  span {
+    margin-top: 2.375rem;
+    color: $pink;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: $darkest-gray;
+    max-width: 17.125rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: $gray-darker;
+    font-size: 1.25rem;
+    line-height: 150%;
+    max-width: 17.125rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .nft-fig {
+    position: absolute;
+    top: -2rem;
+    right: -$container-padding;
+    z-index: -1;
+    min-width: 26rem;
+    width: 26rem; // jei keiti width, reikia keisti ir object-position
+    object-position: 12rem -1rem;
+  }
+}
+
+.bg-img {
+  position: relative;
+  margin-top: 4.65rem;
+
+  & > div {
+    background-image: url(/assets/background.svg);
+    background-repeat: no-repeat;
+    background-position: -40rem;
+
+    position: absolute;
+    left: -$container-padding;
+    right: -$container-padding;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  h2 {
+    padding-top: 7.5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: $darkest-gray;
+    margin-bottom: 1rem;
+  }
+
+  .bg-img-p {
+    font-size: 1.25rem;
+    color: $darkest-gray;
+    line-height: 150%;
+    max-width: 22.75rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.full-width {
+  position: relative;
+  left: -$container-padding;
+  width: calc(100% + $container-padding * 2);
+}
+
+.auction {
+  .company-logos {
+    margin-top: 3.655rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 100%;
+
+    img {
+      object-fit: none;
+      object-position: left;
+      max-width: 10rem;
+      height: 3rem;
+    }
+
+    img:first-child {
+      width: 8.5rem;
+    }
+
+    img:nth-child(4) {
+      display: none;
+    }
+  }
+
+  h3 {
+    margin-top: 3.655rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: $darkest-gray;
+    margin-bottom: 0.5rem;
+  }
+
+  .auction-p {
+    color: $gray-darker;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 150%;
+    a {
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+}
+
+.auction-cards {
+  display: flex;
+  padding-bottom: 5rem;
+  overflow-x: auto;
+
+  
+  .card {
+    width: 18.1rem;
+    height: 25rem;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-left: $container-padding;
+    .card-descrpt {
+      background-color: $bgc-second;
+    }
+    .line {
+      padding: 0 1.3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    span {
+      color: $orange;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    .before-element::before {
+      content: url('/assets/eth.svg');
+    }
+    &:last-child {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.launching-soon {
+  position: relative;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: $pink;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+  }
+  h5 {
+    color: $darkest-gray;
+    width: 17.125rem;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 1.5rem 0;
+   }
+  p {
+    color: $darkest-gray;
+    font-size: 1.25rem;
+    line-height: 150%;
+    width: 12.9375rem;
+    margin-bottom: 2rem;
+  }
+  button {
+    margin-bottom: 4.13rem;
+  }
+}
+  .nft-woman {
+    position: absolute;
+    top: 7rem;
+    right: -$container-padding;
+    z-index: -1;
+    min-width: 13rem;
+    // jei keiciu width, keiciu ir object-position
+
+    width: 13rem; 
+    object-position: 2rem 0;
+  }
+}
+
+  
+.launching {
+  display: none;
+}
+
+
+.footer-logo {
+  margin-top: 4.25rem;
+  height: 2.25rem;
+  margin-bottom: 1.88rem;
+}
+
+.footer-p-1 {
+  color: $gray-darker;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  color: $gray;
+  width: 7.35244rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.footer-card-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-right: 6.5rem;
+}
+
+footer h6 {
+  color: $gray-darker;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.75rem;
+  margin-top: 0;
+}
+
+footer li {
+  font-size: 1.25rem;
+  color: $gray-darker;
+  line-height: 180%;
+}
+
+.copyright {
+  margin-top: 4rem;
+}
