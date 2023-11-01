@@ -1,0 +1,77 @@
+@media screen and (min-width: 1440px) {
+  .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  header {
+    margin-top: 4.38rem;
+    margin-bottom: 12.5rem;
+  }
+  header .burger {
+    display: none;
+  }
+  header nav {
+    display: block;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    font-size: 1.25rem;
+    margin-left: 1.75rem;
+    color: $gray-darker;
+  }
+  a {
+    padding: 0.5rem 0.875rem;
+  }
+  .pink-button {
+    color: $pink;
+  }
+  main {
+    margin-top: 0;
+    h1 {
+      font-size: 6rem;
+      max-width: 38.75rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      max-width: 33.5625rem;
+      margin-bottom: 2.56rem;
+    }
+    .nft-fig {
+      top: 0;
+      
+    }
+  }
+
+
+  .bg-img {
+    & > div {
+      background-position: 100%;
+      border-radius: 1rem;
+    }
+    
+    h2,
+    p {
+      margin-left: 4rem;
+    }
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+    p {
+      padding-bottom: ;
+    }
+
+  }
+
+  .auction {
+    //  ???????
+    
+    .company-logos {
+    
+    }
+    .logo:nth-child(4) {
+      display: inline-block;
+    }
+  }
+}

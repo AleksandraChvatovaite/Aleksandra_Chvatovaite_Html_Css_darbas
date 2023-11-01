@@ -314,6 +314,8 @@ main .nft-fig {
   font-size: 3.5rem;
   font-weight: 900;
   margin: 1.5rem 0;
+  position: relative;
+  z-index: 1;
 }
 .launching-soon p {
   color: #555;
@@ -347,7 +349,7 @@ hr {
 }
 
 .footer-logo {
-  margin-top: 4.25rem;
+  margin-top: 4rem;
   height: 2.25rem;
   margin-bottom: 1.88rem;
 }
@@ -395,4 +397,64 @@ footer li {
 .copyright {
   margin-top: 4rem;
   color: #999;
+  margin-bottom: 6.56rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  header {
+    margin-top: 4.38rem;
+    margin-bottom: 12.5rem;
+  }
+  header .burger {
+    display: none;
+  }
+  header nav {
+    display: block;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  li {
+    font-size: 1.25rem;
+    margin-left: 1.75rem;
+    color: #555;
+  }
+  a {
+    padding: 0.5rem 0.875rem;
+  }
+  .pink-button {
+    color: #FF3998;
+  }
+  main {
+    margin-top: 0;
+  }
+  main h1 {
+    font-size: 6rem;
+    max-width: 38.75rem;
+    margin-bottom: 2rem;
+  }
+  main p {
+    max-width: 33.5625rem;
+    margin-bottom: 2.56rem;
+  }
+  main .nft-fig {
+    top: 0;
+  }
+  .bg-img > div {
+    background-position: 100%;
+    border-radius: 1rem;
+  }
+  .bg-img h2,
+  .bg-img p {
+    margin-left: 4rem;
+  }
+  .bg-img h2 {
+    margin-bottom: 1.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
