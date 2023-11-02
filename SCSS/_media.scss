@@ -1,11 +1,25 @@
-@media screen and (min-width: 1440px) {
-  .container {
-    margin-left: 5rem;
-    margin-right: 5rem;
+@media screen and (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
   }
+  .container {
+    margin: 0 5rem;
+    padding: 0;
+  }
+
+  hr {
+    width: 100%;
+    position: static;
+  }
+
+  .auction-cards {
+    position: static;
+    width: 100%;
+  }
+  
   header {
     margin-top: 4.38rem;
-    margin-bottom: 12.5rem;
+    margin-bottom: 0;
   }
   header .burger {
     display: none;
@@ -18,60 +32,190 @@
   }
   li {
     font-size: 1.25rem;
-    margin-left: 1.75rem;
     color: $gray-darker;
   }
-  a {
+  li a {
     padding: 0.5rem 0.875rem;
   }
   .pink-button {
     color: $pink;
   }
   main {
-    margin-top: 0;
+    width: calc(100% + $container-padding-desktop);
+    overflow: hidden;
+    padding-top: 12.5rem;
+    height: auto;
+    
+    & > div {
+      position: relative;
+      width: 50%;
+      min-width: 38.75rem;
+    }
+
+    span {
+      margin-top: 0;
+    }
+
     h1 {
       font-size: 6rem;
-      max-width: 38.75rem;
+      min-width: 38.75rem;
       margin-bottom: 2rem;
     }
+
     p {
       max-width: 33.5625rem;
       margin-bottom: 2.56rem;
     }
     .nft-fig {
-      top: 0;
-      
+      position: absolute;
+      top: -6rem;
+      right: -91%;
+      object-position: unset;
+      min-width: 46rem;
+    }
+    .btn-wrap {
+      margin-bottom: 12.5rem;
     }
   }
 
 
   .bg-img {
+    height: 20rem;
+    &::before {
+      left:0;
+      right:0;
+      background-position: unset;
+      border-radius: 1rem;
+    }
+    margin-top: 0;
     & > div {
       background-position: 100%;
       border-radius: 1rem;
+      left: 0;
+      right: 0;
     }
     
     h2,
     p {
-      margin-left: 4rem;
+      padding-left: 4rem;
     }
     h2 {
+      padding-top: 9.62rem;
       margin-bottom: 1.5rem;
     }
-    p {
-      padding-bottom: ;
+    .bg-img-p {
+      // width: unset;
+      max-width: unset;
     }
-
   }
 
   .auction {
-    //  ???????
-    
     .company-logos {
-    
+      margin-top: 7.85rem;
+      // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      display: flex;
+      justify-content: space-between;
+    }
+    .logo {
+      height: 2.54rem;
+      width: auto;
+      object-fit: unset;
+    }
+    .logo:first-child {
+      width: unset;
     }
     .logo:nth-child(4) {
       display: inline-block;
     }
+    h3 {
+      margin-top: 7.67rem;
+      margin-bottom: 1.5rem;
+    } 
+     .bidding-p {
+    font-weight: 500;
+    margin-bottom: 3.5rem;
   }
+  }
+  .auction-cards {
+    padding-bottom: 7.5rem;
+  }
+  .auction-cards .card {
+    margin-left: 0;
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+  }
+
+  .launching-soon {
+    margin-top: 7.5rem;
+    h5 {
+      width: unset;
+      max-width: 38.75rem;
+    }
+    hr {
+      display: none;
+    }
+    p {
+      width: unset;
+      max-width: 33.5625rem;
+      margin-bottom: 2.5rem;
+    }
+    button {
+      margin-bottom: 7.5rem;
+    }
+    .nft-woman {
+      object-position: 0rem;
+      top: -1.75rem;
+      object-position: unset;
+      right: 6rem;
+      z-index: 1;
+    }
+  }
+  .footer-content {
+    margin-top: 7.5rem;
+    display: flex;
+    & > div {
+      flex: 1;
+    }
+  }
+  .footer-logo {
+    margin-top: 0;
+  }
+  .footer-card-wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: 0;
+  }
+  .footer-card {
+    display: flex;
+    flex-direction: column;
+    ul {
+      flex-direction: column;
+    }
+    li a {
+      padding-left: 0;
+    }
+  }
+  .launching {
+    display: inline-block;
+  }  
+  .social-icons {
+    margin-bottom: 0;
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.25rem;
+    margin-top: 7.69rem;
+    margin-bottom: 4.44rem;
+  }
+} 
+ 
+@media screen and (min-width: 1440px) {
+  .launching-soon {
+  .nft-woman {
+    right: 15rem;
+  }
+ }
 }

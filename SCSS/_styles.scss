@@ -55,10 +55,12 @@ main {
   position: relative;
   margin-top: 4.65rem;
 
-  & > div {
+  &::before {
+    content: '';
     background-image: url(/assets/background.svg);
     background-repeat: no-repeat;
-    background-position: -40rem;
+    background-position: center;
+    background-size: cover;
 
     position: absolute;
     left: -$container-padding;
@@ -141,11 +143,16 @@ main {
   }
 }
 
+hr, .auction-cards {
+  position: relative;
+  left: -$container-padding;
+  width: calc(100% + $container-padding * 2);
+}
+
 .auction-cards {
   display: flex;
   padding-bottom: 5rem;
   overflow-x: auto;
-
   
   .card {
     display: flex;
@@ -233,6 +240,11 @@ main {
     position: relative;
     z-index: 1;
    }
+  hr {
+    border-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 44%;
+  }
   p {
     color: $gray-darker;
     font-size: 1.25rem;
@@ -249,8 +261,6 @@ main {
     top: 6.6rem;
     right: -$container-padding;
     z-index: -1;
-    // min-width: 13rem;
-    // jei keiciu width, keiciu ir object-position
 
     width: 12.875rem; 
     object-position: 2rem 0;
@@ -272,7 +282,7 @@ hr {
 .footer-logo {
   margin-top: 4rem;
   height: 2.25rem;
-  margin-bottom: 1.88rem;
+  margin-bottom: 1.87rem;
 }
 
 .footer-p-1 {
@@ -315,4 +325,5 @@ footer li {
   margin-top: 4rem;
   color: $gray;
   margin-bottom: 6.56rem;
+  font-size: 1.25rem;
 }
