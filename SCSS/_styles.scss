@@ -46,7 +46,7 @@ main {
     right: -$container-padding;
     z-index: -1;
     min-width: 26rem;
-    width: 26rem; // jei keiti width, reikia keisti ir object-position
+    width: 26rem;
     object-position: 12rem -1rem;
   }
 }
